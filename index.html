@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level_2_3_Forms</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <form action="">
+                <fieldset>
+                    <legend>Register form</legend>
+                    <section class="labels">
+                        <label for="name">Name</label>
+                        <label for="surname">Surname</label>
+                        <label for="email">Email</label>
+                        <label for="gender">Gender</label>
+                        <label for="picture">Picture</label>
+                        <label for="country">Country</label>
+                        <label for="Preferred languages">Preferred Languages</label>
+                        <label for="fieldOfActivity">Field of activity</label>
+
+                        <section class="button">
+                            <button type="submit">Send</button>
+                            <button>Cancel</button>
+                        </section>
+
+                    </section>
+
+                    <section class="inputs">
+                        <input type="text" placeholder="Name" id="name" required>
+                        <input type="text" placeholder="Surname" id="surname" required>
+                        <input type="email" placeholder="Email" id="email" required>
+                        <div class="gender">
+                            <label for="gender" id="gender">Male</label>
+                            <input type="radio" id="gender" name="gender">
+                            <label for="gender" id="gender">Female</label>
+                            <input type="radio" id="gender" name="gender">
+                        </div>
+                        <input type="file" id="picture">
+
+                        <select>
+                            <option>Germany</option>
+                                <option>Spain</option>
+                                <option>France</option>
+                        </select>
+
+                        <select multiple="multiple"> <p> -> Für mehrere elemente</p>
+                            <option value="">HTML</option>
+                            <option value="">JS</option>
+                            <option value="">CSS</option>
+                            <option value="">REACT</option>
+                            <option value="">Python</option>
+                            <option value="">JAVA</option>
+                            <option value="">C++</option>
+                        </select>
+                            
+    
+                        <div class="activity">
+                            <label for="activity">IT</label>
+                            <input type="checkbox" id="fieldOfActivity">
+                            <label for="activity">Design</label>
+                            <input type="checkbox" id="fieldOfActivity">
+                            <label for="activity">Other</label>
+                            <input type="checkbox" id="fieldOfActivity">
+                        </div>
+                        
+                    </section>
+                </fieldset>
+        </form>
+    </main>
+</body>
+</html>
